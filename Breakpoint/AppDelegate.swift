@@ -14,10 +14,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
+
+        let tabBarController = UITabBarController()
+        
+        let authenticationViewController = AuthenticationViewController(nibName: "AuthenticationViewController", bundle: nil)
+        authenticationViewController.tabBarItem = UITabBarItem(title: "Authentication", image: UIImage(named: "first"), tag: 1)
+        
+        let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        loginViewController.tabBarItem = UITabBarItem(title: "Login", image: UIImage(named: "second"), tag: 2)
+        
+        let controllers = [authenticationViewController, loginViewController]
+        tabBarController.viewControllers = controllers
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = tabBarController
+        
         return true
     }
 
@@ -42,7 +56,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

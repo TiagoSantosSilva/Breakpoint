@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A725167A218F3C3F4F5B50B /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C86655C3A4C87840AB96899 /* Pods_Breakpoint.framework */; };
+		27372F751FF3041900944197 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27372F741FF3041900944197 /* InsetTextField.swift */; };
 		27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F718191FF2992200B14EE1 /* AppDelegate.swift */; };
-		27F7181C1FF2992200B14EE1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7181B1FF2992200B14EE1 /* FirstViewController.swift */; };
-		27F7181E1FF2992200B14EE1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7181D1FF2992200B14EE1 /* SecondViewController.swift */; };
-		27F718211FF2992200B14EE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F7181F1FF2992200B14EE1 /* Main.storyboard */; };
 		27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F718221FF2992200B14EE1 /* Assets.xcassets */; };
 		27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */; };
 		27F718321FF29BAF00B14EE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27F718311FF29BAF00B14EE1 /* GoogleService-Info.plist */; };
@@ -23,11 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27372F741FF3041900944197 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		27F718161FF2992200B14EE1 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F718191FF2992200B14EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27F7181B1FF2992200B14EE1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		27F7181D1FF2992200B14EE1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		27F718201FF2992200B14EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27F718221FF2992200B14EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27F718251FF2992200B14EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F718271FF2992200B14EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27372F731FF3040000944197 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27372F741FF3041900944197 /* InsetTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		27F7180D1FF2992200B14EE1 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +79,7 @@
 		27F718181FF2992200B14EE1 /* Breakpoint */ = {
 			isa = PBXGroup;
 			children = (
+				27372F731FF3040000944197 /* Views */,
 				27F718391FF2C21700B14EE1 /* XIBs */,
 				27F718311FF29BAF00B14EE1 /* GoogleService-Info.plist */,
 				27F718301FF29A1600B14EE1 /* Services */,
@@ -82,7 +87,6 @@
 				27F7182E1FF299D100B14EE1 /* Models */,
 				27F7182D1FF299B700B14EE1 /* Controllers */,
 				27F718191FF2992200B14EE1 /* AppDelegate.swift */,
-				27F7181F1FF2992200B14EE1 /* Main.storyboard */,
 				27F718221FF2992200B14EE1 /* Assets.xcassets */,
 				27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */,
 				27F718271FF2992200B14EE1 /* Info.plist */,
@@ -93,8 +97,6 @@
 		27F7182D1FF299B700B14EE1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				27F7181B1FF2992200B14EE1 /* FirstViewController.swift */,
-				27F7181D1FF2992200B14EE1 /* SecondViewController.swift */,
 				27F718351FF2C21200B14EE1 /* AuthenticationViewController.swift */,
 				27F7183A1FF2C6AF00B14EE1 /* LoginViewController.swift */,
 			);
@@ -216,7 +218,6 @@
 				27F7183D1FF2C6AF00B14EE1 /* LoginViewController.xib in Resources */,
 				27F718321FF29BAF00B14EE1 /* GoogleService-Info.plist in Resources */,
 				27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */,
-				27F718211FF2992200B14EE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F7183C1FF2C6AF00B14EE1 /* LoginViewController.swift in Sources */,
-				27F7181E1FF2992200B14EE1 /* SecondViewController.swift in Sources */,
 				27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */,
 				27F718371FF2C21200B14EE1 /* AuthenticationViewController.swift in Sources */,
-				27F7181C1FF2992200B14EE1 /* FirstViewController.swift in Sources */,
+				27372F751FF3041900944197 /* InsetTextField.swift in Sources */,
 				27F718341FF2A22800B14EE1 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,14 +287,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		27F7181F1FF2992200B14EE1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27F718201FF2992200B14EE1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
