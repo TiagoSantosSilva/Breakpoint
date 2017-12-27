@@ -64,7 +64,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isK-Kb-Rlc">
                     <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3qc-Km-5TQ">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="3qc-Km-5TQ">
                             <rect key="frame" x="8" y="28" width="60" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="n8p-C6-naz"/>
@@ -134,6 +134,7 @@
     </objects>
     <resources>
         <image name="close" width="21" height="20"/>
+        <image name="defaultProfileImage" width="102" height="102"/>
         <image name="send" width="29" height="29"/>
     </resources>
 </document>

@@ -21,6 +21,7 @@ class PostMessageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        sendButton.bindToKeyBoard()
         dataService = DataService()
     }
     

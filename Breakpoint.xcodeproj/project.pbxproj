@@ -20,6 +20,7 @@
 		27F07E6C1FF3EC9600EB5F69 /* PostMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E6A1FF3EC9600EB5F69 /* PostMessageViewController.swift */; };
 		27F07E6D1FF3EC9600EB5F69 /* PostMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E6B1FF3EC9600EB5F69 /* PostMessageViewController.xib */; };
 		27F07E6F1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */; };
+		27F07E711FF3F9D500EB5F69 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E701FF3F9D500EB5F69 /* UIViewExtension.swift */; };
 		27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F718191FF2992200B14EE1 /* AppDelegate.swift */; };
 		27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F718221FF2992200B14EE1 /* Assets.xcassets */; };
 		27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */; };
@@ -44,6 +45,7 @@
 		27F07E6A1FF3EC9600EB5F69 /* PostMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageViewController.swift; sourceTree = "<group>"; };
 		27F07E6B1FF3EC9600EB5F69 /* PostMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostMessageViewController.xib; sourceTree = "<group>"; };
 		27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageViewControllerExtension.swift; sourceTree = "<group>"; };
+		27F07E701FF3F9D500EB5F69 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		27F718161FF2992200B14EE1 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F718191FF2992200B14EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F718221FF2992200B14EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				27F07E631FF3DAC800EB5F69 /* LoginViewControllerExtension.swift */,
 				27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */,
+				27F07E701FF3F9D500EB5F69 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F07E711FF3F9D500EB5F69 /* UIViewExtension.swift in Sources */,
 				27F07E6F1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift in Sources */,
 				27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */,
 				27F07E5A1FF3B79D00EB5F69 /* FeedViewController.swift in Sources */,
