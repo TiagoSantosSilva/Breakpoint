@@ -25,6 +25,11 @@ class PostMessageViewController: UIViewController {
         dataService = DataService()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailLabel.text = Auth.auth().currentUser?.email
+    }
+    
     @IBAction func closeButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
