@@ -22,13 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController = UITabBarController()
         tabBarController.tabBar.backgroundColor = #colorLiteral(red: 0.2549019608, green: 0.2705882353, blue: 0.3137254902, alpha: 1)
         tabBarController.tabBar.tintColor = #colorLiteral(red: 0.4922404289, green: 0.7722371817, blue: 0.4631441236, alpha: 1)
+        tabBarController.tabBar.unselectedItemTintColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         
         let storyboard = UIStoryboard(name: "FirstStoryboard", bundle: nil)
+        
         let feedViewController = storyboard.instantiateViewController(withIdentifier: "FeedViewController")
-
         feedViewController.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "feed-tabIcon"), tag: 1)
         
-        let groupsViewController = LoginViewController(nibName: "GroupsViewController", bundle: nil)
+        let groupsViewController = storyboard.instantiateViewController(withIdentifier: "GroupsViewController")
         groupsViewController.tabBarItem = UITabBarItem(title: "Groups", image: UIImage(named: "groups-tabIcon"), tag: 2)
         
         let controllers = [feedViewController, groupsViewController]
