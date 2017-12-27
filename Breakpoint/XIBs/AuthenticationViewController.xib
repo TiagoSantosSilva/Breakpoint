@@ -37,7 +37,7 @@
                     <color key="textColor" red="0.5607843137254902" green="0.81176470588235294" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyX-Fc-wDr">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyX-Fc-wDr" customClass="ShadowView" customModule="Breakpoint" customModuleProvider="target">
                     <rect key="frame" x="14.5" y="153" width="345" height="360"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="EKW-QM-cCn">

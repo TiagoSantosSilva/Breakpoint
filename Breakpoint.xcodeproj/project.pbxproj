@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A725167A218F3C3F4F5B50B /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C86655C3A4C87840AB96899 /* Pods_Breakpoint.framework */; };
 		27372F751FF3041900944197 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27372F741FF3041900944197 /* InsetTextField.swift */; };
+		27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27372F7A1FF31E3900944197 /* ShadowView.swift */; };
 		27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F718191FF2992200B14EE1 /* AppDelegate.swift */; };
 		27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F718221FF2992200B14EE1 /* Assets.xcassets */; };
 		27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		27372F741FF3041900944197 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		27372F7A1FF31E3900944197 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		27F718161FF2992200B14EE1 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F718191FF2992200B14EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F718221FF2992200B14EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,12 +52,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27372F731FF3040000944197 /* Views */ = {
+		27372F731FF3040000944197 /* Cocoa Touches */ = {
 			isa = PBXGroup;
 			children = (
 				27372F741FF3041900944197 /* InsetTextField.swift */,
+				27372F7A1FF31E3900944197 /* ShadowView.swift */,
 			);
-			path = Views;
+			path = "Cocoa Touches";
 			sourceTree = "<group>";
 		};
 		27F7180D1FF2992200B14EE1 = {
@@ -79,7 +82,7 @@
 		27F718181FF2992200B14EE1 /* Breakpoint */ = {
 			isa = PBXGroup;
 			children = (
-				27372F731FF3040000944197 /* Views */,
+				27372F731FF3040000944197 /* Cocoa Touches */,
 				27F718391FF2C21700B14EE1 /* XIBs */,
 				27F718311FF29BAF00B14EE1 /* GoogleService-Info.plist */,
 				27F718301FF29A1600B14EE1 /* Services */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */,
 				27F7183C1FF2C6AF00B14EE1 /* LoginViewController.swift in Sources */,
 				27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */,
 				27F718371FF2C21200B14EE1 /* AuthenticationViewController.swift in Sources */,
