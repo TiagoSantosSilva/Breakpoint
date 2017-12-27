@@ -18,19 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         FirebaseApp.configure()
-        // UITabBar.appearance().tintColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-        // UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+        
         let tabBarController = UITabBarController()
         tabBarController.tabBar.backgroundColor = #colorLiteral(red: 0.2549019608, green: 0.2705882353, blue: 0.3137254902, alpha: 1)
         tabBarController.tabBar.tintColor = #colorLiteral(red: 0.4922404289, green: 0.7722371817, blue: 0.4631441236, alpha: 1)
+        
+        let storyboard = UIStoryboard(name: "FirstStoryboard", bundle: nil)
+        let feedViewController = storyboard.instantiateViewController(withIdentifier: "FeedViewController")
 
-        let authenticationViewController = AuthenticationViewController(nibName: "FeedViewController", bundle: nil)
-        authenticationViewController.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "feed-tabIcon"), tag: 1)
+        feedViewController.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "feed-tabIcon"), tag: 1)
         
-        let loginViewController = LoginViewController(nibName: "GroupsViewController", bundle: nil)
-        loginViewController.tabBarItem = UITabBarItem(title: "Groups", image: UIImage(named: "groups-tabIcon"), tag: 2)
+        let groupsViewController = LoginViewController(nibName: "GroupsViewController", bundle: nil)
+        groupsViewController.tabBarItem = UITabBarItem(title: "Groups", image: UIImage(named: "groups-tabIcon"), tag: 2)
         
-        let controllers = [authenticationViewController, loginViewController]
+        let controllers = [feedViewController, groupsViewController]
         tabBarController.viewControllers = controllers
         
         window = UIWindow(frame: UIScreen.main.bounds)

@@ -13,9 +13,9 @@
 		27F07E551FF3B15A00EB5F69 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E541FF3B15A00EB5F69 /* AuthenticationService.swift */; };
 		27F07E571FF3B1A100EB5F69 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E561FF3B1A100EB5F69 /* UserStatus.swift */; };
 		27F07E5A1FF3B79D00EB5F69 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */; };
-		27F07E5B1FF3B79D00EB5F69 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E591FF3B79D00EB5F69 /* FeedViewController.xib */; };
 		27F07E5E1FF3B7B900EB5F69 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */; };
 		27F07E5F1FF3B7B900EB5F69 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E5D1FF3B7B900EB5F69 /* GroupsViewController.xib */; };
+		27F07E621FF3C12400EB5F69 /* FirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E611FF3C12400EB5F69 /* FirstStoryboard.storyboard */; };
 		27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F718191FF2992200B14EE1 /* AppDelegate.swift */; };
 		27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F718221FF2992200B14EE1 /* Assets.xcassets */; };
 		27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */; };
@@ -33,9 +33,9 @@
 		27F07E541FF3B15A00EB5F69 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		27F07E561FF3B1A100EB5F69 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
 		27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		27F07E591FF3B79D00EB5F69 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		27F07E5D1FF3B7B900EB5F69 /* GroupsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
+		27F07E611FF3C12400EB5F69 /* FirstStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstStoryboard.storyboard; sourceTree = "<group>"; };
 		27F718161FF2992200B14EE1 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F718191FF2992200B14EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F718221FF2992200B14EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +73,14 @@
 			path = "Cocoa Touches";
 			sourceTree = "<group>";
 		};
+		27F07E601FF3C0DA00EB5F69 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				27F07E611FF3C12400EB5F69 /* FirstStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		27F7180D1FF2992200B14EE1 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +102,7 @@
 		27F718181FF2992200B14EE1 /* Breakpoint */ = {
 			isa = PBXGroup;
 			children = (
+				27F07E601FF3C0DA00EB5F69 /* Storyboards */,
 				27372F731FF3040000944197 /* Cocoa Touches */,
 				27F718391FF2C21700B14EE1 /* XIBs */,
 				27F718311FF29BAF00B14EE1 /* GoogleService-Info.plist */,
@@ -148,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				27F718361FF2C21200B14EE1 /* AuthenticationViewController.xib */,
-				27F07E591FF3B79D00EB5F69 /* FeedViewController.xib */,
 				27F07E5D1FF3B7B900EB5F69 /* GroupsViewController.xib */,
 				27F7183B1FF2C6AF00B14EE1 /* LoginViewController.xib */,
 			);
@@ -236,10 +244,10 @@
 			files = (
 				27F718381FF2C21200B14EE1 /* AuthenticationViewController.xib in Resources */,
 				27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */,
+				27F07E621FF3C12400EB5F69 /* FirstStoryboard.storyboard in Resources */,
 				27F7183D1FF2C6AF00B14EE1 /* LoginViewController.xib in Resources */,
 				27F718321FF29BAF00B14EE1 /* GoogleService-Info.plist in Resources */,
 				27F07E5F1FF3B7B900EB5F69 /* GroupsViewController.xib in Resources */,
-				27F07E5B1FF3B79D00EB5F69 /* FeedViewController.xib in Resources */,
 				27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
