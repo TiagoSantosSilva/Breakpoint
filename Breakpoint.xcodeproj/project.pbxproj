@@ -12,6 +12,10 @@
 		27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27372F7A1FF31E3900944197 /* ShadowView.swift */; };
 		27F07E551FF3B15A00EB5F69 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E541FF3B15A00EB5F69 /* AuthenticationService.swift */; };
 		27F07E571FF3B1A100EB5F69 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E561FF3B1A100EB5F69 /* UserStatus.swift */; };
+		27F07E5A1FF3B79D00EB5F69 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */; };
+		27F07E5B1FF3B79D00EB5F69 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E591FF3B79D00EB5F69 /* FeedViewController.xib */; };
+		27F07E5E1FF3B7B900EB5F69 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */; };
+		27F07E5F1FF3B7B900EB5F69 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E5D1FF3B7B900EB5F69 /* GroupsViewController.xib */; };
 		27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F718191FF2992200B14EE1 /* AppDelegate.swift */; };
 		27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F718221FF2992200B14EE1 /* Assets.xcassets */; };
 		27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */; };
@@ -28,6 +32,10 @@
 		27372F7A1FF31E3900944197 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		27F07E541FF3B15A00EB5F69 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		27F07E561FF3B1A100EB5F69 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
+		27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		27F07E591FF3B79D00EB5F69 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		27F07E5D1FF3B7B900EB5F69 /* GroupsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
 		27F718161FF2992200B14EE1 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F718191FF2992200B14EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F718221FF2992200B14EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +114,8 @@
 			children = (
 				27F718351FF2C21200B14EE1 /* AuthenticationViewController.swift */,
 				27F7183A1FF2C6AF00B14EE1 /* LoginViewController.swift */,
+				27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */,
+				27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				27F718361FF2C21200B14EE1 /* AuthenticationViewController.xib */,
+				27F07E591FF3B79D00EB5F69 /* FeedViewController.xib */,
+				27F07E5D1FF3B7B900EB5F69 /* GroupsViewController.xib */,
 				27F7183B1FF2C6AF00B14EE1 /* LoginViewController.xib */,
 			);
 			path = XIBs;
@@ -226,6 +238,8 @@
 				27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */,
 				27F7183D1FF2C6AF00B14EE1 /* LoginViewController.xib in Resources */,
 				27F718321FF29BAF00B14EE1 /* GoogleService-Info.plist in Resources */,
+				27F07E5F1FF3B7B900EB5F69 /* GroupsViewController.xib in Resources */,
+				27F07E5B1FF3B79D00EB5F69 /* FeedViewController.xib in Resources */,
 				27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,8 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */,
+				27F07E5A1FF3B79D00EB5F69 /* FeedViewController.swift in Sources */,
 				27F7183C1FF2C6AF00B14EE1 /* LoginViewController.swift in Sources */,
 				27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */,
+				27F07E5E1FF3B7B900EB5F69 /* GroupsViewController.swift in Sources */,
 				27F718371FF2C21200B14EE1 /* AuthenticationViewController.swift in Sources */,
 				27372F751FF3041900944197 /* InsetTextField.swift in Sources */,
 				27F718341FF2A22800B14EE1 /* DataService.swift in Sources */,
