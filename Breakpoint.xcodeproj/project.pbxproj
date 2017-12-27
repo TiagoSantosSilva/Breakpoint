@@ -16,6 +16,7 @@
 		27F07E5E1FF3B7B900EB5F69 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */; };
 		27F07E621FF3C12400EB5F69 /* FirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E611FF3C12400EB5F69 /* FirstStoryboard.storyboard */; };
 		27F07E641FF3DAC800EB5F69 /* LoginViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E631FF3DAC800EB5F69 /* LoginViewControllerExtension.swift */; };
+		27F07E681FF3E74D00EB5F69 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E671FF3E74D00EB5F69 /* ProfileViewController.swift */; };
 		27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F718191FF2992200B14EE1 /* AppDelegate.swift */; };
 		27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F718221FF2992200B14EE1 /* Assets.xcassets */; };
 		27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 		27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		27F07E611FF3C12400EB5F69 /* FirstStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstStoryboard.storyboard; sourceTree = "<group>"; };
 		27F07E631FF3DAC800EB5F69 /* LoginViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerExtension.swift; sourceTree = "<group>"; };
+		27F07E671FF3E74D00EB5F69 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		27F718161FF2992200B14EE1 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F718191FF2992200B14EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F718221FF2992200B14EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				27F7183A1FF2C6AF00B14EE1 /* LoginViewController.swift */,
 				27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */,
 				27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */,
+				27F07E671FF3E74D00EB5F69 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */,
 				27F07E5E1FF3B7B900EB5F69 /* GroupsViewController.swift in Sources */,
 				27F718371FF2C21200B14EE1 /* AuthenticationViewController.swift in Sources */,
+				27F07E681FF3E74D00EB5F69 /* ProfileViewController.swift in Sources */,
 				27372F751FF3041900944197 /* InsetTextField.swift in Sources */,
 				27F718341FF2A22800B14EE1 /* DataService.swift in Sources */,
 				27F07E571FF3B1A100EB5F69 /* UserStatus.swift in Sources */,

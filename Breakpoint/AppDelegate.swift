@@ -34,7 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let groupsViewController = storyboard.instantiateViewController(withIdentifier: "GroupsViewController")
         groupsViewController.tabBarItem = UITabBarItem(title: "Groups", image: UIImage(named: "groups-tabIcon"), tag: 2)
         
-        let controllers = [feedViewController, groupsViewController]
+        let profileViewController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
+        profileViewController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "me-tabIcon"), tag: 3)
+        
+        let controllers = [feedViewController, groupsViewController, profileViewController]
         tabBarController.viewControllers = controllers
         
         window?.rootViewController = tabBarController
