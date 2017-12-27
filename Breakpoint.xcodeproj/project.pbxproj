@@ -17,6 +17,9 @@
 		27F07E621FF3C12400EB5F69 /* FirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E611FF3C12400EB5F69 /* FirstStoryboard.storyboard */; };
 		27F07E641FF3DAC800EB5F69 /* LoginViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E631FF3DAC800EB5F69 /* LoginViewControllerExtension.swift */; };
 		27F07E681FF3E74D00EB5F69 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E671FF3E74D00EB5F69 /* ProfileViewController.swift */; };
+		27F07E6C1FF3EC9600EB5F69 /* PostMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E6A1FF3EC9600EB5F69 /* PostMessageViewController.swift */; };
+		27F07E6D1FF3EC9600EB5F69 /* PostMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F07E6B1FF3EC9600EB5F69 /* PostMessageViewController.xib */; };
+		27F07E6F1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */; };
 		27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F718191FF2992200B14EE1 /* AppDelegate.swift */; };
 		27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F718221FF2992200B14EE1 /* Assets.xcassets */; };
 		27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */; };
@@ -38,6 +41,9 @@
 		27F07E611FF3C12400EB5F69 /* FirstStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstStoryboard.storyboard; sourceTree = "<group>"; };
 		27F07E631FF3DAC800EB5F69 /* LoginViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerExtension.swift; sourceTree = "<group>"; };
 		27F07E671FF3E74D00EB5F69 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		27F07E6A1FF3EC9600EB5F69 /* PostMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageViewController.swift; sourceTree = "<group>"; };
+		27F07E6B1FF3EC9600EB5F69 /* PostMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostMessageViewController.xib; sourceTree = "<group>"; };
+		27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageViewControllerExtension.swift; sourceTree = "<group>"; };
 		27F718161FF2992200B14EE1 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F718191FF2992200B14EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F718221FF2992200B14EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 				27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */,
 				27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */,
 				27F07E671FF3E74D00EB5F69 /* ProfileViewController.swift */,
+				27F07E6A1FF3EC9600EB5F69 /* PostMessageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				27F07E631FF3DAC800EB5F69 /* LoginViewControllerExtension.swift */,
+				27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 			children = (
 				27F718361FF2C21200B14EE1 /* AuthenticationViewController.xib */,
 				27F7183B1FF2C6AF00B14EE1 /* LoginViewController.xib */,
+				27F07E6B1FF3EC9600EB5F69 /* PostMessageViewController.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F718381FF2C21200B14EE1 /* AuthenticationViewController.xib in Resources */,
+				27F07E6D1FF3EC9600EB5F69 /* PostMessageViewController.xib in Resources */,
 				27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */,
 				27F07E621FF3C12400EB5F69 /* FirstStoryboard.storyboard in Resources */,
 				27F7183D1FF2C6AF00B14EE1 /* LoginViewController.xib in Resources */,
@@ -309,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F07E6F1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift in Sources */,
 				27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */,
 				27F07E5A1FF3B79D00EB5F69 /* FeedViewController.swift in Sources */,
 				27F7183C1FF2C6AF00B14EE1 /* LoginViewController.swift in Sources */,
@@ -318,6 +329,7 @@
 				27F07E681FF3E74D00EB5F69 /* ProfileViewController.swift in Sources */,
 				27372F751FF3041900944197 /* InsetTextField.swift in Sources */,
 				27F718341FF2A22800B14EE1 /* DataService.swift in Sources */,
+				27F07E6C1FF3EC9600EB5F69 /* PostMessageViewController.swift in Sources */,
 				27F07E571FF3B1A100EB5F69 /* UserStatus.swift in Sources */,
 				27F07E641FF3DAC800EB5F69 /* LoginViewControllerExtension.swift in Sources */,
 				27F07E551FF3B15A00EB5F69 /* AuthenticationService.swift in Sources */,
