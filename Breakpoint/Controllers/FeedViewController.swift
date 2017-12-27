@@ -10,8 +10,24 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var messageArray = [Message]()
+    var dataService: DataService!
+    
     override func viewDidLoad() {
+        self.dataService = DataService()
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        dataService.getAllFeedMessages { (returnedMessageArray) in
+            self.messageArray = returnedMessageArray
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func postSomethingButtonWasTapped(_ sender: Any) {

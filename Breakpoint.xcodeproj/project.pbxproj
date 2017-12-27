@@ -22,6 +22,8 @@
 		27F07E6F1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */; };
 		27F07E711FF3F9D500EB5F69 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E701FF3F9D500EB5F69 /* UIViewExtension.swift */; };
 		27F07E731FF4007500EB5F69 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E721FF4007500EB5F69 /* FeedTableViewCell.swift */; };
+		27F07E761FF4095C00EB5F69 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E751FF4095C00EB5F69 /* Message.swift */; };
+		27F07E791FF4158900EB5F69 /* FeedViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E781FF4158900EB5F69 /* FeedViewControllerExtension.swift */; };
 		27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F718191FF2992200B14EE1 /* AppDelegate.swift */; };
 		27F718231FF2992200B14EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F718221FF2992200B14EE1 /* Assets.xcassets */; };
 		27F718261FF2992200B14EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F718241FF2992200B14EE1 /* LaunchScreen.storyboard */; };
@@ -48,6 +50,8 @@
 		27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageViewControllerExtension.swift; sourceTree = "<group>"; };
 		27F07E701FF3F9D500EB5F69 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		27F07E721FF4007500EB5F69 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		27F07E751FF4095C00EB5F69 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		27F07E781FF4158900EB5F69 /* FeedViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerExtension.swift; sourceTree = "<group>"; };
 		27F718161FF2992200B14EE1 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F718191FF2992200B14EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F718221FF2992200B14EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +96,16 @@
 				27F07E611FF3C12400EB5F69 /* FirstStoryboard.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		27F07E771FF4157100EB5F69 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27F07E631FF3DAC800EB5F69 /* LoginViewControllerExtension.swift */,
+				27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */,
+				27F07E781FF4158900EB5F69 /* FeedViewControllerExtension.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		27F7180D1FF2992200B14EE1 = {
@@ -147,6 +161,7 @@
 		27F7182E1FF299D100B14EE1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				27F07E751FF4095C00EB5F69 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,8 +169,7 @@
 		27F7182F1FF299E400B14EE1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				27F07E631FF3DAC800EB5F69 /* LoginViewControllerExtension.swift */,
-				27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */,
+				27F07E771FF4157100EB5F69 /* Controllers */,
 				27F07E701FF3F9D500EB5F69 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
@@ -328,6 +342,8 @@
 				27F07E711FF3F9D500EB5F69 /* UIViewExtension.swift in Sources */,
 				27F07E6F1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift in Sources */,
 				27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */,
+				27F07E761FF4095C00EB5F69 /* Message.swift in Sources */,
+				27F07E791FF4158900EB5F69 /* FeedViewControllerExtension.swift in Sources */,
 				27F07E5A1FF3B79D00EB5F69 /* FeedViewController.swift in Sources */,
 				27F7183C1FF2C6AF00B14EE1 /* LoginViewController.swift in Sources */,
 				27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */,
