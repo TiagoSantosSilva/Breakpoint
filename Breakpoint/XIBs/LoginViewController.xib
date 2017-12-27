@@ -17,6 +17,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Breakpoint" customModuleProvider="target">
             <connections>
+                <outlet property="emailField" destination="rnk-OQ-P1R" id="z2C-av-leQ"/>
+                <outlet property="passwordField" destination="vbG-s4-ZjR" id="F5h-vt-d3i"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,6 +34,9 @@
                         <constraint firstAttribute="width" constant="30" id="xiy-vc-smO"/>
                     </constraints>
                     <state key="normal" image="close"/>
+                    <connections>
+                        <action selector="closeButtonWasPressed:" destination="-1" eventType="touchUpInside" id="Ftd-it-af3"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnG-Dr-4MS">
                     <rect key="frame" x="147.5" y="258" width="80" height="33"/>
@@ -42,6 +47,9 @@
                     <state key="normal" title="SIGN IN">
                         <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="signInButtonWasPresssed:" destination="-1" eventType="touchUpInside" id="wAU-vr-BVh"/>
+                    </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tN9-a4-mbZ">
                     <rect key="frame" x="20" y="78" width="335" height="160"/>

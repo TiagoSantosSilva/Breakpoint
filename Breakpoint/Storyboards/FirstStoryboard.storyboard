@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="82.3088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Groups View Controller-->
         <scene sceneID="SZL-ih-lW3">
             <objects>
-                <viewController storyboardIdentifier="GroupsViewController" id="SD9-k2-SHT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupsViewController" id="SD9-k2-SHT" customClass="GroupsViewController" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JjJ-jO-cIC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

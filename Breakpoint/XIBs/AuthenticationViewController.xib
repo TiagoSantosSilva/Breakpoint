@@ -55,6 +55,9 @@
                                     <state key="normal" title="LOGIN WITH FB">
                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="facebookSignInButtonWasPressed:" destination="-1" eventType="touchUpInside" id="Kjg-7E-K1w"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giF-VS-kjo">
                                     <rect key="frame" x="0.0" y="139.5" width="305" height="61"/>
@@ -62,6 +65,9 @@
                                     <state key="normal" title="LOGIN WITH G+">
                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="googleSignInButtonWasPressed:" destination="-1" eventType="touchUpInside" id="Y9z-aD-3BJ"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kY-Qb-f5V">
                                     <rect key="frame" x="0.0" y="209.5" width="305" height="60.5"/>
@@ -80,6 +86,9 @@
                             <state key="normal" title=" by email" image="emailIcon">
                                 <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="signInWithEmailButtonWasPressed:" destination="-1" eventType="touchUpInside" id="LNQ-6z-a7b"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
