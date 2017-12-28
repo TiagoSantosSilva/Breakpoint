@@ -10,6 +10,7 @@
 		0A725167A218F3C3F4F5B50B /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C86655C3A4C87840AB96899 /* Pods_Breakpoint.framework */; };
 		27372F751FF3041900944197 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27372F741FF3041900944197 /* InsetTextField.swift */; };
 		27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27372F7A1FF31E3900944197 /* ShadowView.swift */; };
+		27937ADC1FF46751001A6006 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27937ADB1FF46751001A6006 /* CreateGroupViewController.swift */; };
 		27F07E551FF3B15A00EB5F69 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E541FF3B15A00EB5F69 /* AuthenticationService.swift */; };
 		27F07E5A1FF3B79D00EB5F69 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */; };
 		27F07E5E1FF3B7B900EB5F69 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		27372F741FF3041900944197 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		27372F7A1FF31E3900944197 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		27937ADB1FF46751001A6006 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		27F07E541FF3B15A00EB5F69 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */,
 				27F07E671FF3E74D00EB5F69 /* ProfileViewController.swift */,
 				27F07E6A1FF3EC9600EB5F69 /* PostMessageViewController.swift */,
+				27937ADB1FF46751001A6006 /* CreateGroupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				27F07E731FF4007500EB5F69 /* FeedTableViewCell.swift in Sources */,
 				27372F751FF3041900944197 /* InsetTextField.swift in Sources */,
 				27F718341FF2A22800B14EE1 /* DataService.swift in Sources */,
+				27937ADC1FF46751001A6006 /* CreateGroupViewController.swift in Sources */,
 				27F07E6C1FF3EC9600EB5F69 /* PostMessageViewController.swift in Sources */,
 				27F07E641FF3DAC800EB5F69 /* LoginViewControllerExtension.swift in Sources */,
 				27F07E551FF3B15A00EB5F69 /* AuthenticationService.swift in Sources */,
