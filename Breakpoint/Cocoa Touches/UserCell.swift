@@ -9,13 +9,25 @@
 import UIKit
 
 class UserCell: UITableViewCell {
-
+    
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var checkImage: UIImageView!
     
+    var showing = false
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
+        if selected {
+            if showing {
+                checkImage.isHidden = true
+                showing = false
+            } else {
+                checkImage.isHidden = false
+                showing = true
+            }
+        }
     }
     
     func configureCell(profileImage image: UIImage, email: String, isSelected: Bool) {
@@ -23,9 +35,9 @@ class UserCell: UITableViewCell {
         self.emailLabel.text = email
         
         if isSelected {
-            self.checkImage.isHidden = false
+            checkImage.isHidden = false
         } else {
-            self.checkImage.isHidden = true
+            checkImage.isHidden = true
         }
     }
 }

@@ -18,6 +18,7 @@ class CreateGroupViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var emailArray = [String]()
+    var chosenUserArray = [String]()
     var dataService: DataService!
     
     override func viewDidLoad() {
@@ -39,6 +40,11 @@ class CreateGroupViewController: UIViewController {
                 self.tableView.reloadData()
             })
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        doneButton.isHidden = true
     }
     
     @IBAction func closeButtonWasPressed(_ sender: Any) {
