@@ -13,6 +13,8 @@
 		273C604B1FF6D4A10020F201 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C604A1FF6D4A10020F201 /* UserCell.swift */; };
 		273C604E1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C604D1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift */; };
 		27937ADC1FF46751001A6006 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27937ADB1FF46751001A6006 /* CreateGroupViewController.swift */; };
+		279FBCB91FF7065E00D310A3 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FBCB81FF7065E00D310A3 /* GroupCell.swift */; };
+		279FBCBB1FF7073800D310A3 /* GroupsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FBCBA1FF7073800D310A3 /* GroupsViewControllerExtension.swift */; };
 		27F07E551FF3B15A00EB5F69 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E541FF3B15A00EB5F69 /* AuthenticationService.swift */; };
 		27F07E5A1FF3B79D00EB5F69 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */; };
 		27F07E5E1FF3B7B900EB5F69 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */; };
@@ -43,6 +45,8 @@
 		273C604A1FF6D4A10020F201 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		273C604D1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewControllerExtension.swift; sourceTree = "<group>"; };
 		27937ADB1FF46751001A6006 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		279FBCB81FF7065E00D310A3 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		279FBCBA1FF7073800D310A3 /* GroupsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewControllerExtension.swift; sourceTree = "<group>"; };
 		27F07E541FF3B15A00EB5F69 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		27F07E581FF3B79D00EB5F69 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		27F07E5C1FF3B7B900EB5F69 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 				27372F7A1FF31E3900944197 /* ShadowView.swift */,
 				27F07E721FF4007500EB5F69 /* FeedTableViewCell.swift */,
 				273C604A1FF6D4A10020F201 /* UserCell.swift */,
+				279FBCB81FF7065E00D310A3 /* GroupCell.swift */,
 			);
 			path = "Cocoa Touches";
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				27F07E6E1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift */,
 				27F07E781FF4158900EB5F69 /* FeedViewControllerExtension.swift */,
 				273C604D1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift */,
+				279FBCBA1FF7073800D310A3 /* GroupsViewControllerExtension.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -345,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279FBCB91FF7065E00D310A3 /* GroupCell.swift in Sources */,
 				27F07E711FF3F9D500EB5F69 /* UIViewExtension.swift in Sources */,
 				27F07E6F1FF3F6C300EB5F69 /* PostMessageViewControllerExtension.swift in Sources */,
 				27372F7B1FF31E3900944197 /* ShadowView.swift in Sources */,
@@ -356,6 +363,7 @@
 				27F7181A1FF2992200B14EE1 /* AppDelegate.swift in Sources */,
 				27F07E5E1FF3B7B900EB5F69 /* GroupsViewController.swift in Sources */,
 				27F718371FF2C21200B14EE1 /* AuthenticationViewController.swift in Sources */,
+				279FBCBB1FF7073800D310A3 /* GroupsViewControllerExtension.swift in Sources */,
 				27F07E681FF3E74D00EB5F69 /* ProfileViewController.swift in Sources */,
 				273C604E1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift in Sources */,
 				27F07E731FF4007500EB5F69 /* FeedTableViewCell.swift in Sources */,

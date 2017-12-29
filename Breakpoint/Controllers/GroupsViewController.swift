@@ -10,8 +10,12 @@ import UIKit
 
 class GroupsViewController: UIViewController {
 
+    @IBOutlet weak var groupTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        groupTableView.delegate = self
+        groupTableView.dataSource = self
     }
     
     @IBAction func addGroupButtonWasPressed(_ sender: Any) {
