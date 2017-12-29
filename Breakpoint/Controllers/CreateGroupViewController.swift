@@ -17,10 +17,28 @@ class CreateGroupViewController: UIViewController {
     @IBOutlet weak var titleField: InsetTextField!
     @IBOutlet weak var tableView: UITableView!
     
+    var emailArray = [String]()
+    var dataService: DataService!
+    
     override func viewDidLoad() {
+        dataService = DataService()
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        emailSearchField.delegate = self
+        emailSearchField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+    }
+    
+    @objc func textFieldDidChange() {
+        if emailSearchField.text == "" {
+            emailArray = []
+            tableView.reloadData()
+        } else {
+            dataService.getEmail(forSearchQuery: emailSearchField.text!, handler: { (returnedEmailArray) in
+                self.emailArray = returnedEmailArray
+                self.tableView.reloadData()
+            })
+        }
     }
     
     @IBAction func closeButtonWasPressed(_ sender: Any) {
