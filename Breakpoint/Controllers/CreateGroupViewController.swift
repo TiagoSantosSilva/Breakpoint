@@ -15,9 +15,12 @@ class CreateGroupViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var emailSearchField: InsetTextField!
     @IBOutlet weak var titleField: InsetTextField!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     @IBAction func closeButtonWasPressed(_ sender: Any) {
