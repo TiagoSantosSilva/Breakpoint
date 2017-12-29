@@ -9,13 +9,26 @@
 import UIKit
 
 class GroupsViewController: UIViewController {
-
+    
     @IBOutlet weak var groupTableView: UITableView!
+    
+    var groupArray = [Group]()
+    var dataService: DataService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         groupTableView.delegate = self
         groupTableView.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        dataService.getGroupsUrl().observe(.value) { (dataSnapshot) in
+            super.viewDidAppear(animated)
+            self.dataService.getAllGroups { (groupArray) in
+                self.groupArray = groupArray
+                self.groupTableView.reloadData()
+            }
+        }
     }
     
     @IBAction func addGroupButtonWasPressed(_ sender: Any) {
