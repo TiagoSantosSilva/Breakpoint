@@ -44,7 +44,8 @@ class DataService {
     
     func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
         if groupKey != nil {
-            getGroupsUrl().child(groupKey!).childByAutoId().updateChildValues(["content": message, "senderId": uid])
+            getGroupsUrl().child(groupKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
+            sendComplete(true)
         } else {
             getFeedUrl().childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendComplete(true)
@@ -64,6 +65,7 @@ class DataService {
                 let groupMessage = Message(content: content, senderId: senderId)
                 groupMessageArray.append(groupMessage)
             }
+            handler(groupMessageArray)
         }
     }
     

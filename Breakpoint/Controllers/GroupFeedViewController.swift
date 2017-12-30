@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class GroupFeedViewController: UIViewController {
 
@@ -24,6 +25,8 @@ class GroupFeedViewController: UIViewController {
     override func viewDidLoad() {
         dataService = DataService()
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
         sendMessageButtonView.bindToKeyBoard()
     }
     
@@ -42,6 +45,10 @@ class GroupFeedViewController: UIViewController {
             self.dataService.getAllMessagesFor(desiredGroup: self.group!, handler: { (returnedGroupMessages) in
                 self.groupMessages = returnedGroupMessages
                 self.tableView.reloadData()
+                
+                if self.groupMessages.count > 0 {
+                    self.tableView.scrollToRow(at: IndexPath(row: self.groupMessages.count - 1, section: 0), at: .none, animated: true)
+                }
             })
         }
     }
@@ -52,5 +59,16 @@ class GroupFeedViewController: UIViewController {
     
     
     @IBAction func sendButtonWasPressed(_ sender: Any) {
+        if messageField.text != "" {
+            messageField.isEnabled = false
+            sendButton.isEnabled = false
+            dataService.uploadPost(withMessage: messageField.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: group?.key, sendComplete: { (complete) in
+                if complete {
+                    self.messageField.text = ""
+                    self.messageField.isEnabled = true
+                    self.sendButton.isEnabled = true
+                }
+            })
+        }
     }
 }

@@ -581,10 +581,10 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UFk-Po-ky0">
-                                <rect key="frame" x="0.0" y="103" width="375" height="564"/>
+                                <rect key="frame" x="0.0" y="103" width="375" height="504"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="100" id="5Aa-Hb-1dU" customClass="GroupFeedCell" customModule="Breakpoint" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupFeedCell" rowHeight="100" id="5Aa-Hb-1dU" customClass="GroupFeedCell" customModule="Breakpoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Aa-Hb-1dU" id="ymn-rJ-EIt">
@@ -681,14 +681,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="J81-nJ-piY" firstAttribute="bottom" secondItem="Ckl-Vz-1u3" secondAttribute="bottom" id="0jX-Gf-3Oy"/>
                             <constraint firstItem="UFk-Po-ky0" firstAttribute="top" secondItem="tOK-cr-FU0" secondAttribute="bottom" constant="8" id="49a-9v-Jd9"/>
                             <constraint firstItem="t4e-3O-dty" firstAttribute="trailing" secondItem="Ckl-Vz-1u3" secondAttribute="trailing" id="7FY-Y6-goW"/>
                             <constraint firstItem="tOK-cr-FU0" firstAttribute="leading" secondItem="Ckl-Vz-1u3" secondAttribute="leading" id="8PR-9V-TYf"/>
                             <constraint firstItem="t4e-3O-dty" firstAttribute="top" secondItem="PM5-zc-rIV" secondAttribute="top" id="AYr-kV-6fC"/>
                             <constraint firstItem="J81-nJ-piY" firstAttribute="leading" secondItem="Ckl-Vz-1u3" secondAttribute="leading" id="BmT-KU-IhV"/>
-                            <constraint firstItem="UFk-Po-ky0" firstAttribute="bottom" secondItem="Ckl-Vz-1u3" secondAttribute="bottom" id="JY5-GF-8lG"/>
+                            <constraint firstItem="J81-nJ-piY" firstAttribute="top" secondItem="UFk-Po-ky0" secondAttribute="bottom" id="L4K-mm-MiD"/>
                             <constraint firstItem="UFk-Po-ky0" firstAttribute="leading" secondItem="Ckl-Vz-1u3" secondAttribute="leading" id="LIC-Kp-eql"/>
-                            <constraint firstItem="J81-nJ-piY" firstAttribute="bottom" secondItem="UFk-Po-ky0" secondAttribute="bottom" id="OVd-m5-Sem"/>
                             <constraint firstItem="Ckl-Vz-1u3" firstAttribute="trailing" secondItem="tOK-cr-FU0" secondAttribute="trailing" id="PMx-Lo-1ye"/>
                             <constraint firstItem="tOK-cr-FU0" firstAttribute="top" secondItem="t4e-3O-dty" secondAttribute="bottom" constant="8" id="TLd-fh-Rjt"/>
                             <constraint firstItem="UFk-Po-ky0" firstAttribute="trailing" secondItem="Ckl-Vz-1u3" secondAttribute="trailing" id="ljB-NG-li3"/>
