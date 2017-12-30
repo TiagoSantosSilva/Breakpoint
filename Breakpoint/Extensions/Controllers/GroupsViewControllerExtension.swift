@@ -24,4 +24,9 @@ extension GroupsViewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let groupFeedViewController = storyboard?.instantiateViewController(withIdentifier: "GroupFeedViewController") as? GroupFeedViewController else { return }
+        groupFeedViewController.initData(forGroup: groupArray[indexPath.row])
+        present(groupFeedViewController, animated: true, completion: nil)
+    }
 }

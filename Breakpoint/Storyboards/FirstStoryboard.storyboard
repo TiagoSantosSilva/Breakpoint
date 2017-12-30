@@ -698,6 +698,8 @@
                         <viewLayoutGuide key="safeArea" id="Ckl-Vz-1u3"/>
                     </view>
                     <connections>
+                        <outlet property="groupMembersLabel" destination="tOK-cr-FU0" id="RmI-5H-PG5"/>
+                        <outlet property="groupTitleLabel" destination="D8H-Gn-zYA" id="PBb-N5-fr1"/>
                         <outlet property="messageField" destination="4gL-0N-Dd9" id="cCr-W5-te2"/>
                         <outlet property="sendButton" destination="vrt-ab-ByF" id="LXt-fe-nJv"/>
                         <outlet property="sendMessageButtonView" destination="J81-nJ-piY" id="6Bd-N8-Pn6"/>
