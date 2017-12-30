@@ -9,11 +9,11 @@
 import Foundation
 
 struct Group {
-    private var title: String
-    private var description: String
-    private var key: String
-    private var memberCount: Int
-    private var members: [String]
+    public private(set) var title: String
+    public private(set) var description: String
+    public private(set) var key: String
+    public private(set) var memberCount: Int
+    public private(set) var members: [String]
     
     init(title: String, description: String, key: String, memberCount: Int, members: [String]) {
         self.title = title

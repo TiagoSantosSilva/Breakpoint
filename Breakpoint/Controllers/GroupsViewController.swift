@@ -16,6 +16,7 @@ class GroupsViewController: UIViewController {
     var dataService: DataService!
     
     override func viewDidLoad() {
+        dataService = DataService()
         super.viewDidLoad()
         groupTableView.delegate = self
         groupTableView.dataSource = self
