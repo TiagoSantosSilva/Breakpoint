@@ -14,6 +14,7 @@
 		273C604E1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C604D1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift */; };
 		2782A7FF1FF7B49B004347F0 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A7FE1FF7B49B004347F0 /* GroupFeedCell.swift */; };
 		2782A8011FF7B4DC004347F0 /* GroupFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A8001FF7B4DC004347F0 /* GroupFeedViewController.swift */; };
+		2782A8031FF7E2B2004347F0 /* GroupFeedViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A8021FF7E2B2004347F0 /* GroupFeedViewControllerExtension.swift */; };
 		27937ADC1FF46751001A6006 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27937ADB1FF46751001A6006 /* CreateGroupViewController.swift */; };
 		279FBCB91FF7065E00D310A3 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FBCB81FF7065E00D310A3 /* GroupCell.swift */; };
 		279FBCBB1FF7073800D310A3 /* GroupsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FBCBA1FF7073800D310A3 /* GroupsViewControllerExtension.swift */; };
@@ -49,6 +50,7 @@
 		273C604D1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewControllerExtension.swift; sourceTree = "<group>"; };
 		2782A7FE1FF7B49B004347F0 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
 		2782A8001FF7B4DC004347F0 /* GroupFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedViewController.swift; sourceTree = "<group>"; };
+		2782A8021FF7E2B2004347F0 /* GroupFeedViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedViewControllerExtension.swift; sourceTree = "<group>"; };
 		27937ADB1FF46751001A6006 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		279FBCB81FF7065E00D310A3 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		279FBCBA1FF7073800D310A3 /* GroupsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				27F07E781FF4158900EB5F69 /* FeedViewControllerExtension.swift */,
 				273C604D1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift */,
 				279FBCBA1FF7073800D310A3 /* GroupsViewControllerExtension.swift */,
+				2782A8021FF7E2B2004347F0 /* GroupFeedViewControllerExtension.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				279FBCBB1FF7073800D310A3 /* GroupsViewControllerExtension.swift in Sources */,
 				27F07E681FF3E74D00EB5F69 /* ProfileViewController.swift in Sources */,
 				273C604E1FF6DDE90020F201 /* CreateGroupViewControllerExtension.swift in Sources */,
+				2782A8031FF7E2B2004347F0 /* GroupFeedViewControllerExtension.swift in Sources */,
 				2782A7FF1FF7B49B004347F0 /* GroupFeedCell.swift in Sources */,
 				27F07E731FF4007500EB5F69 /* FeedTableViewCell.swift in Sources */,
 				27372F751FF3041900944197 /* InsetTextField.swift in Sources */,

@@ -18,6 +18,7 @@ class GroupFeedViewController: UIViewController {
     @IBOutlet weak var sendButton: UIButton!
     
     var group: Group?
+    var groupMessages = [Message]()
     var dataService: DataService!
     
     override func viewDidLoad() {
@@ -35,6 +36,13 @@ class GroupFeedViewController: UIViewController {
         groupTitleLabel.text = group?.title
         dataService.getEmails(group: self.group!) { (emailArray) in
             self.groupMembersLabel.text = emailArray.joined(separator: ", ")
+        }
+        
+        dataService.getGroupsUrl().observe(.value) { (snapshot) in
+            self.dataService.getAllMessagesFor(desiredGroup: self.group!, handler: { (returnedGroupMessages) in
+                self.groupMessages = returnedGroupMessages
+                self.tableView.reloadData()
+            })
         }
     }
     

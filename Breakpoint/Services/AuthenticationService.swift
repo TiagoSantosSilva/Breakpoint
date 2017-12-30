@@ -26,7 +26,7 @@ class AuthenticationService {
             
             let userData = ["provider": user.providerID, "email": user.email]
             
-            self.dataService.createDatabaseUser(uniqueId: user.uid, userData: userData)
+            self.dataService.createDatabaseUser(uniqueId: user.uid, userData: userData as Any as! Dictionary<String, Any>)
             userCreationComplete(true, nil)
         }
     }
