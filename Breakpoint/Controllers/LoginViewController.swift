@@ -16,6 +16,10 @@ class LoginViewController: UIViewController {
     var authenticationService: AuthenticationService!
     var dataService: DataService!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         self.dataService = DataService()
         self.authenticationService = AuthenticationService(dataService: self.dataService)

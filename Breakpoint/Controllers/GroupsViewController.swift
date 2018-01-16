@@ -22,6 +22,10 @@ class GroupsViewController: UIViewController {
         groupTableView.dataSource = self
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         dataService.getGroupsUrl().observe(.value) { (dataSnapshot) in
             super.viewDidAppear(animated)

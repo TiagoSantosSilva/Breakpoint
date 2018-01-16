@@ -22,6 +22,10 @@ class FeedViewController: UIViewController {
         tableView.delegate = self
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         dataService.getAllFeedMessages { (returnedMessageArray) in

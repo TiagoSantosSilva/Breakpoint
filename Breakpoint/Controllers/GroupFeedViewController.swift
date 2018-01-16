@@ -30,6 +30,10 @@ class GroupFeedViewController: UIViewController {
         sendMessageButtonView.bindToKeyBoard()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func initData(forGroup group: Group) {
         self.group = group
     }

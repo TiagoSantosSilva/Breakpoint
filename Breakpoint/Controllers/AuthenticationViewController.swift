@@ -15,6 +15,10 @@ class AuthenticationViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {
             dismiss(animated: true, completion: nil)
